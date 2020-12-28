@@ -10,7 +10,7 @@
 >
 > \- Sir Timothy Berners-Lee, W3C Director and inventor of the World Wide Web
 
-This quote perfectly highlights the importance of creating accessible websites. An application that can't be accessed by all is by definition exclusionary. As web developers we should always have accessibility in mind. By having this focus from the beginning you will be well on your way to ensure everyone can access the pages you create. In this lesson, you'll learn about the tools that can help you ensure that your web assets are accessible and how to build with accessibility in mind. 
+This quote perfectly highlights the importance of creating accessible websites. An application that can't be accessed by all is by definition exclusionary. As web developers we should always have accessibility in mind. By having this focus from the beginning you will be well on your way to ensure everyone can access the pages you create. In this lesson, you'll learn about the tools that can help you ensure that your web assets are accessible and how to build with accessibility in mind.
 
 ## Tools to use
 
@@ -168,50 +168,60 @@ Take this HTML and rewrite it to be as accessible as possible, given the strateg
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Example
-    </title>
-    <link href='../assets/style.css' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <div class="site-header">
-      <p class="site-title">Turtle Ipsum</p>
-      <p class="site-subtitle">The World's Premier Turtle Fan Club</p>
+
+<head>
+  <title>
+    Example
+  </title>
+  <link href='../assets/style.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="site-header">
+    <p class="site-title">Turtle Ipsum</p>
+    <p class="site-subtitle">The World's Premier Turtle Fan Club</p>
+  </div>
+  <div class="main-nav">
+    <p class="nav-header">Resources</p>
+    <div class="nav-list">
+      <p class="nav-item nav-item-bull"><a href="https://www.youtube.com/watch?v=CMNry4PE93Y">"Video Zombie Kid Likes
+          Turtles"</a></p>
+      <p class="nav-item nav-item-bull"><a href="https://en.wikipedia.org/wiki/Turtle">Basic Turtle Info</a></p>
+      <p class="nav-item nav-item-bull"><a href="https://en.wikipedia.org/wiki/Turtles_(chocolate)">Chocolate
+          Turtles</a></p>
     </div>
-    <div class="main-nav">
-      <p class="nav-header">Resources</p>
+  </div>
+  <div class="main-content">
+    <div>
+      <p class="page-title">Welcome to Turtle Ipsum.
+        <a href="">Click here to learn more about turtles.</a>
+      </p>
+      <p class="article-text">
+        Turtle ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum
+      </p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-section">
+      <button aria-label="Inscrever">Sign up for turtle news</button>
+    </div>
+    <div class="footer-section">
+      <p class="nav-header footer-title">
+        Internal Pages
+      </p>
       <div class="nav-list">
-        <p class="nav-item nav-item-bull"><a href="https://www.youtube.com/watch?v=CMNry4PE93Y">"I like turtles"</a></p>
-        <p class="nav-item nav-item-bull"><a href="https://en.wikipedia.org/wiki/Turtle">Basic Turtle Info</a></p>
-        <p class="nav-item nav-item-bull"><a href="https://en.wikipedia.org/wiki/Turtles_(chocolate)">Chocolate Turtles</a></p>
+        <p class="nav-item nav-item-bull"><a href="../">Index</a></p>
+        <p class="nav-item nav-item-bull"><a href="../semantic">Semantic Example</a></p>
       </div>
     </div>
-    <div class="main-content">
-      <div>
-        <p class="page-title">Welcome to Turtle Ipsum. 
-            <a href="">Click here</a> to learn more.
-        </p>
-        <p class="article-text">
-          Turtle ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        </p>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="footer-section">
-        <span class="button">Sign up for turtle news</span>
-      </div><div class="footer-section">
-        <p class="nav-header footer-title">
-          Internal Pages
-        </p>
-        <div class="nav-list">
-          <p class="nav-item nav-item-bull"><a href="../">Index</a></p>
-          <p class="nav-item nav-item-bull"><a href="../semantic">Semantic Example</a></p>
-        </div>
-      </div>
-      <p class="footer-copyright">&copy; 2016 Instrument</span>
-    </div>
-  </body>
+    <p class="footer-copyright">&copy; 2016 Instrument</span>
+  </div>
+</body>
+
 </html>
 ```
 
@@ -223,7 +233,7 @@ Take this HTML and rewrite it to be as accessible as possible, given the strateg
 Many governments have laws regarding accessibility requirements. Read up on your home country's accessibility laws. What is covered, and what isn't? An example is [this government web site](https://accessibility.blog.gov.uk/).
 
 ## Assignment
- 
+
 [Analyze a non-accessible web site](assignment.md)
 
 Credits: [Turtle Ipsum](https://github.com/Instrument/semantic-html-sample) by Instrument
