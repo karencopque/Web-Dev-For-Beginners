@@ -3,7 +3,7 @@
 ![JavaScript Basics - Making decisions](images/webdev101-js-decisions.png)
 > Sketchnote by [Tomomi Imura](https://twitter.com/girlie_mac)
 
-## 
+##
 Pre-Lecture Quiz
 [Pre-lecture quiz](.github/pre-lecture-quiz.md)
 
@@ -28,10 +28,10 @@ Operators are used to evaluate conditions by making comparisons that will create
 
 | Symbol | Description                                                                                                                                                   | Example            |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| `<`    | **Less than**: Compares two values and returns the `true` Boolean data type if the value on the left side is less than the right                         | `5 < 6 // true`    |
-| `<=`   | **Less than or equal to**: Compares two values and returns the `true` Boolean data type if the value on the left side is less than or equal to the right | `5 <= 6 // true`   |
-| `>`    | **Greater than**: Compares two values and returns the `true` Boolean data type if the value on the left side is larger than the right                            | `5 > 6 // false`   |
-| `>=`   | **Greater than or equal to**: Compares two values and returns the `true` Boolean data type if the value on the left side is larger than or equal to the right    | `5 >= 6 // false`  |
+| `<`    | **Less than**: Compares two values and returns the `true` Boolean data type if the value on the left side is less than the right                              | `5 < 6 // true`    |
+| `<=`   | **Less than or equal to**: Compares two values and returns the `true` Boolean data type if the value on the left side is less than or equal to the right      | `5 <= 6 // true`   |
+| `>`    | **Greater than**: Compares two values and returns the `true` Boolean data type if the value on the left side is larger than the right                         | `5 > 6 // false`   |
+| `>=`   | **Greater than or equal to**: Compares two values and returns the `true` Boolean data type if the value on the left side is larger than or equal to the right | `5 >= 6 // false`  |
 | `===`  | **Strict equality**: Compares two values and returns the `true` Boolean data type if values on the right and left are equal AND are the same data type.       | `5 === 6 // false` |
 | `!==`  | **Inequality**: Compares two values and returns the opposite Boolean value of what a strict equality operator would return                                    | `5 !== 6 // true`  |
 
@@ -138,11 +138,11 @@ let biggestNumber = firstNumber > secondNumber ? firstNumber: secondNumber;
 
 ✅ Take a minute to read this code a few times. Do you understand how these operators are working?
 
-The above states that 
-- if `firstNumber` is larger than `secondNumber` 
-- then assign `firstNumber` to `biggestNumber` 
-- else assign `secondNumber`. 
-  
+The above states that
+- if `firstNumber` is larger than `secondNumber`
+- then assign `firstNumber` to `biggestNumber`
+- else assign `secondNumber`.
+
 The ternary expression is just a compact way of writing the code below:
 
 ```javascript
@@ -160,7 +160,21 @@ if (firstNumber > secondNumber) {
 
 Create a program that is written first with logical operators, and then rewrite it using a ternary expression. What's your preferred syntax?
 
-## 
+Resposta
+
+let maiorNum;
+if (n1 > n2) {
+  maiorNum = n1
+} else {
+  (n1 < n2)
+  maiorNum = n2
+}
+
+let maiorNum = n1 > n2 ? n1 : n2
+
+Eu prefiro op ternario
+
+##
 Post-Lecture Quiz
 [Post-lecture quiz](.github/post-lecture-quiz.md)
 
