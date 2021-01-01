@@ -2,7 +2,7 @@
 
 1. To refer to specific item in an array, you would use a
 
-- [ ] square bracket `[]`
+- [x] square bracket `[]`
 - [ ] index
 - [ ] curly braces `{}`
 
@@ -10,4 +10,4 @@
 
 - [ ] The `len(array)` method
 - [ ] The property `size` on the array
-- [ ] The `length` property on the array
+- [x] The `length` property on the array
